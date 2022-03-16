@@ -1,0 +1,45 @@
+body{
+    height:100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.hand-wrapper{
+    width:250px;
+    height: 290px;
+    background: url(/img/righthand.png);
+    position: relative;
+}
+
+.f{
+    position: absolute;
+    opacity: 1;
+}
+.f img{
+    height:100%;
+    width: 100%;
+}
+.f1 {
+    height: 81px;
+    transform: rotate(-45deg) translate(-48px,77px);
+}
+
+.f2 {
+    height: 98px;
+    transform: rotate(-21deg) translate(42px,59px);
+}
+.f3 {
+    height: 109px;
+    transform: rotate(-7deg) translate(95px,28px);
+}
+.f4 {
+    height: 109px;
+    transform: rotate(6deg) translate(145px,11px);
+}
+.f5 {
+    height: 87px;
+    transform: rotate(33deg) translate(225px,2px);
+}
+.scl{
+    transform: scale(2);
+}
