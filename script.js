@@ -10,3 +10,4 @@ hand.addEventListener('click',function(e){
     console.log(id);
     document.querySelector(`.${id}`).style.opacity=1;
  });
+ 
