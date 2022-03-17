@@ -7,7 +7,7 @@ body{
 .hand-wrapper{
     width:250px;
     height: 290px;
-    background: url(/img/righthand.png);
+    background: url(./img/righthand.png);
     position: relative;
 }
 
