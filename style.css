@@ -3,25 +3,26 @@ body{
     display: flex;
     justify-content:center;
     align-items: center;
+    flex-direction: column;
 }
-.hand-wrapper{
+/* .hand-wrapper{
     width:250px;
     height: 290px;
-    background: url(./img/righthand.png);
+    background:rgba(0,0,0,0.1) url(/img/righthand.png);
     position: relative;
-}
+} */
 
-.f{
+/*.f{
     position: absolute;
     opacity: 0;
 }
-.f img{
+ .f img{
     height:100%;
     width: 100%;
 }
 .f1 {
-    height: 81px;
-    transform: rotate(-45deg) translate(-48px,77px);
+    height: 80px;
+    transform: rotate(-45deg) translate(-48px,78px);
 }
 
 .f2 {
@@ -41,5 +42,59 @@ body{
     transform: rotate(33deg) translate(225px,2px);
 }
 .scl{
-    transform: scale(2);
+    width:100px;
+    height:auto;
+    transform: scale(1);
+} */
+.hand-wrapper{
+    width:100%;
+    max-width: 300px;
+    min-width:120px;
+    position: relative;
+}
+.hand-wrapper .hand{
+    width: 100%;
+}
+.overlayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.f{
+    position: absolute;
+    opacity: 0;
+}
+.f img{
+    height: 100%;
+}
+.test .f5{
+    opacity: 1;
+}
+.f1 {
+    width:11%;
+    height: 28%;
+    transform: rotate(-45deg) translate(-176%,96%);
+}
+.f2 {
+    width: 11%;
+    height: 33%;
+    transform: rotate(-21deg) translate(153%,62%);
+}
+.f3{
+    width: 10%;
+    height: 37%;
+    transform: rotate(-7deg) translate(383%,25%);
+}
+.f4 {
+    width: 10%;
+    height: 37%;
+    transform: rotate(6deg) translate(586%,11%);
+}
+.f5 {
+    width: 10%;
+    height: 30%;
+    transform: rotate(30deg) translate(899%,13%);
 }
