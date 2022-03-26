@@ -10,4 +10,12 @@ hand.addEventListener('click',function(e){
     console.log(id);
     document.querySelector(`.${id}`).style.opacity=1;
  });
- 
+ const Lhand = document.getElementById('hand-L');
+
+hand-L.addEventListener('click',function(e){
+    console.log('clicked on left hand');
+    console.log(e);
+    const id = e.target.getAttribute('alt');
+    console.log(id);
+    document.querySelector(`.${id}`).style.opacity=1;
+ });

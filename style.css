@@ -98,3 +98,47 @@ body{
     height: 30%;
     transform: rotate(30deg) translate(899%,13%);
 }
+
+.fing-body{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    position: relative;
+    background-color: aliceblue;
+
+}
+.fing{
+    width: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+path{
+    fill-opacity: 1;
+    stroke: aqua;
+    stroke-width: 2px;
+    fill: aquamarine;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 5000;
+    transition: fill .9s ease;
+
+    animation: animate 5s ease-in-out;
+}
+circle{
+    fill-opacity: 1;
+    stroke: aqua;
+    fill: aquamarine;
+    stroke-width: 2px;
+}
+
+@keyframes animate {
+    0%{
+        stroke-dashoffset: 5000;
+        fill: none;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        fill: aqua;
+    }
+}
