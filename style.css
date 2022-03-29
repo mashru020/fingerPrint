@@ -117,28 +117,46 @@ body{
 path{
     fill-opacity: 1;
     stroke: aqua;
-    stroke-width: 2px;
-    fill: aquamarine;
+    stroke-width: 3px;
+    fill: aqua;
     stroke-dashoffset: 0;
     stroke-dasharray: 5000;
     transition: fill .9s ease;
 
-    animation: animate 5s ease-in-out;
+    animation: animate 8s ease-in-out;
+    animation-iteration-count: infinite;
 }
 circle{
     fill-opacity: 1;
     stroke: aqua;
-    fill: aquamarine;
-    stroke-width: 2px;
+    fill: aqua;
+    stroke-width: 3px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 5000;
+
+    animation: animate 8s ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 @keyframes animate {
     0%{
         stroke-dashoffset: 5000;
-        fill: none;
+        fill: white;
+    }
+    25%{
+        stroke-dashoffset: 0;
+        fill:white;
+    }
+    50%{
+        stroke-dashoffset: 5000;
+        fill: white;
+    }
+    75%{
+        stroke-dashoffset: 0;
+        fill:white;
     }
     100%{
-        stroke-dashoffset: 0;
-        fill: aqua;
+        stroke-dashoffset: 5000;
+        fill:white;
     }
 }
